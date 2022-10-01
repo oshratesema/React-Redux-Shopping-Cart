@@ -8,10 +8,11 @@ export default function ProductComponent() {
     const {id,title,image,category,price} = product;
     return(
       <div className='four column wide' key={id}>
-        <Link to={`/product/${id}`}>
       <div className='ui link cards'>
         <div className='image'>
+        <Link to={`/product/${id}`}>
           <img src={image} alt={title}/>
+      </Link>
         </div>
         <div className='content'>
           <div className='header'>{title}</div>
@@ -19,7 +20,6 @@ export default function ProductComponent() {
           <div className='header'>{category}</div>
         </div>
       </div>
-      </Link>
     </div>
     );
   })

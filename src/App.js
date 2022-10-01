@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Router, Routes } from "react-router-dom";
-import Header from "./containers/Header";
-import ProductDetails from "./containers/ProductDetails";
-import ProductListening from "./containers/ProductListening";
+import Header from "./containers/Header/Header";
+import ProductDetails from "./containers/ProductPage/ProductDetails";
+import ProductListening from "./containers/ProductListeing/ProductListening";
 
 export default function App() {
   return (

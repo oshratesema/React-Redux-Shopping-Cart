@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className='ui fixed menu'>
         <div className='ui container center'>
-            <h2>Fake Shop</h2>
+            <h2>Lorem</h2>
         </div>
     </div>
   )

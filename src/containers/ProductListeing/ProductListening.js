@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import axios from 'axios'
 import { useSelector, useDispatch } from 'react-redux/es/exports'
-import { setProducts } from '../redux/actions/productActions'
-import ProductComponent from './ProductComponent'
+import { setProducts } from '../../redux/actions/productActions'
+import ProductComponent from '../ProductsPage/ProductComponent'
 
 export default function ProductListening() {
   const products = useSelector((state) => state)
@@ -23,8 +23,7 @@ export default function ProductListening() {
   return (
     <div className='ui grid container'>
         <h1>ProductListening</h1>
-        <ProductComponent/>
-        
+        <ProductComponent/>     
     </div>
   )
 }
